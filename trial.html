@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="trialcssfile.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -21,29 +21,34 @@
             </div>
 
             <br>
-
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <hr class="dashed">
+<!--rating part-->
+            <div class="rating">
+                <h2>Rating</h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <hr class="dashed">
 
             <h1>Vision</h1>
             <div>To be a premier technical and management institution providing the best in class learning solutions for
                 developing competent professionals.
             </div>
-
             <br>
-
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-
+            <hr class="dashed">
             <h1>Mission</h1>
             <h3>Atria Institute of Technology is committed to:</h3>
             <ul style="list-style-type:circle;">
                 <li>Create the right ambiance to attract the best human resources.</li>
                 <li>Collaborate with leading institutions and industry.</li>
-                <li>students with teaching, learning engagements, and research.</li>
+                <li>Students with teaching, learning engagements, and research.</li>
             </ul>
-
             <br>
 
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <hr class="dashed">
             <h1 >Visit us</h1>
             <p>ASKB Campus, 1st Main Rd, Ags Colony, Anandnagar, Hebbal, Bengaluru, Karnataka 560024</p>
             <div class="centre-h">
@@ -56,28 +61,58 @@
         </div>
         <div class="main">
             
-            <ul class="nav nav-pills">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PROGRAM OFFERED</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">B.E</a></li>
-                    <li><a class="dropdown-item" href="#">M.TECH</a></li>
-                    <li><a class="dropdown-item" href="#">MBA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                  </ul>
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About collage</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Programs Offered</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Placements</a>
                 </li>
               </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h1>ABOUT COLLAGE</h1>
+                    <h3>Atria Institute of Technology (AIT)  is one of the most prestigious institutes in Bangalore providing state-of-the-art professional education in various streams of Engineering and Management. It offers programs at the undergraduate, postgraduate and doctorate levels. Admission is done on the basis of state-level entrance exams like KCET or COMEDK UGET entrance exams. About 90% of the students have been placed through campus recruitment and 50 companies were involved in campus recruitment drive last year.</h3></div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h2>B.E</h2>
+            <ul style="list-style-type:circle;">
+                <li><h3>Computer Science & Engineering</h3></li>
+                <li><h3>Information Science & Engineering</h3></li>
+                <li><h3>Electronics & Communication Engineering</h3></li>
+                <li><h3>Mechanical Engineering</h3></li>
+                <li><h3>Civil Engineering</h3></li>
+            </ul>
+            <hr class="rounded">
+            <h2>M.TECH</h2>
+            <ul style="list-style-type:circle;">
+                <li><h3>Computer Science & Engineering</h3></li>
+                <li><h3>Digital Electronics and Engineering</h3></li>
+                <li><h3>Computer Networks & Engineering</h3></li>
+            </ul>
+            <hr class="rounded">
+            <h2>MBA</h2>
+            <ul style="list-style-type:circle;">
+                <li><h3>Core HR</h3></li>
+                <li><h3>Core Marketing</h3></li>
+                <li><h3>Core Finance</h3></li>
+            </ul>
+            <br>
+                </div>
+                <div class="tab-pane fade " id="contact" role="tabpanel" aria-labelledby="contact-tab"><h1>Placements</h1>
+                    <img class="new"src="placement.jpg" width="500">
+                    <h3>At Atria, we have placement as an integral part of the education process of a student. Placement
+                        preparation & readiness starts soon after admissions - for each student, identifying the basic skills
+                        and improvement areas, conducting foundation, add-on, and advantage courses, monitoring the progress and
+                        enhancing the readiness to face the placement season with confidence, is an interdisciplinary activity
+                        with oversight by the Academic Head and the Placement Head of the institution.</h3></div>
+              </div>
 
+
+
+<!--
             <h1>Programs Offered</h1>
             <h2>B.E</h2>
             <ul style="list-style-type:circle;">
@@ -87,12 +122,14 @@
                 <li><h3>Mechanical Engineering</h3></li>
                 <li><h3>Civil Engineering</h3></li>
             </ul>
+            <hr class="rounded">
             <h2>M.TECH</h2>
             <ul style="list-style-type:circle;">
                 <li><h3>Computer Science & Engineering</h3></li>
                 <li><h3>Digital Electronics and Engineering</h3></li>
                 <li><h3>Computer Networks & Engineering</h3></li>
             </ul>
+            <hr class="rounded">
             <h2>MBA</h2>
             <ul style="list-style-type:circle;">
                 <li><h3>Core HR</h3></li>
@@ -100,6 +137,7 @@
                 <li><h3>Core Finance</h3></li>
             </ul>
             <br>
+
             <h1>Placements</h1>
             <img src="placement.jpg" width="800">
             <p>At Atria, we have placement as an integral part of the education process of a student. Placement
@@ -108,6 +146,7 @@
                 enhancing the readiness to face the placement season with confidence, is an interdisciplinary activity
                 with oversight by the Academic Head and the Placement Head of the institution.</p>
         </div>
+        -->
     </div>
 
 </body>
