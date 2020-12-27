@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+/*font size*/
+.fontsize{
+font-family: 'Times New Roman', Times, serif;
+font-size: 150%;
+}
 /* just for getting rating in center 
 .rating{
     text-align: center
