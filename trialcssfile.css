@@ -1,7 +1,38 @@
 * {
     box-sizing: border-box;
 }
+.image
+{
+position: relative;
+}
+   
+/*font size*/
+.fontsize{
+font-family: 'Times New Roman', Times, serif;
+font-size: 150%;
+}
+/* just for getting rating in center 
+.rating{
+    text-align: center
+}
+*/
 
+/* Rating star*/
+.checked {
+    color: rgb(214, 139, 0);
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+/* Dashed border */
+.dashed {
+    border-top: 3px dashed #bbb;
+  }
+/* Rounded border */
+.rounded {
+    border-top: 3px solid #bbb;
+    border-radius: 5px;
+  }
 /* Style the body */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -19,6 +50,7 @@ body {
 .centre-h {
     display: flex;
     justify-content: center;
+    
 }
 
 /* Create two unequal columns that sits next to each other */
