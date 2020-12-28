@@ -1,28 +1,15 @@
 * {
     box-sizing: border-box;
 }
-.image
-{
-position: relative;
-}
-   
+
 /*font size*/
 .fontsize{
-font-family: 'Times New Roman', Times, serif;
 font-size: 150%;
 }
-/* just for getting rating in center 
-.rating{
-    text-align: center
-}
-*/
 
 /* Rating star*/
 .checked {
     color: rgb(214, 139, 0);
-    margin-left: auto;
-    margin-right: auto;
-
   }
 /* Dashed border */
 .dashed {
@@ -35,7 +22,6 @@ font-size: 150%;
   }
 /* Style the body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -45,6 +31,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .centre-h {
@@ -57,7 +44,7 @@ body {
 /* Sidebar/left column */
 .side {
     -ms-flex: 30%; /* IE10 */
-    padding: 20px;
+    padding: 20px 0 0 20px;
     flex: 30%;
     background-color: #f1f1f1;
 
@@ -68,21 +55,6 @@ body {
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
     background-color: white;
-    padding: 20px;
+    padding: 20px 0 0 20px;
 }
 
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-}
